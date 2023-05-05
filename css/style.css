@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3598DB;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background: #ccc;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #aaa;
+}
+h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+.todolist-app{
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;  
+    width: 300px;
+}
+.pending-tasks span{
+    font-size: 1rem;
+    color: #333;
+}
+.btn{
+    background-color: #3598DB;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+#clear-all{
+    padding: 10px;
+    margin-left: 0px;
+}
+#add{
+    padding: 15px 15px;
+}
+.input-field{
+    margin-top: 1rem;
+}
+.input-field textarea{
+    margin-top: 10px;
+    margin-bottom: -21px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    width: 200px;
+    font-family:'Poppins',sans-serif;
+}
+textarea:focus{
+    outline: none;
+}
+hr{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+#todolists .list{
+    list-style: none;
+    background-color: #f2f2f2;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+#todolists .list input{
+    height: 16px;
+    width: 16px;
+}
+
+.list .task{
+    margin-left: 10px;
+}
+.list i{
+    display: flex;
+    margin-left: auto;
+}
+.list input:checked ~ .task{
+    text-decoration: line-through;
+    color: #9B9B9B;
+}
